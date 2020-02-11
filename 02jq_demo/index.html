@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="less/index.css">
+    <style>
+        .box {
+            width: 155px;
+            height: 59px;
+            padding: 8px;
+            /* border: 1px solid; */
+            /* margin: 100px auto; */
+        }
+
+        .inner {
+            position: relative;
+            overflow: hidden;
+            height: 59px;
+        }
+
+        #imglist {
+            width: 300%;
+            position: absolute;
+            left: 0;
+            /* left变化的时候，才会有过渡效果 */
+            transition: left 300ms linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_body">
+
+        <header class="header">
+            <div class="shortcut">
+                <div class="txt">
+                    <span>LOGIN</span>
+                    <span>JOIN</span>
+                    <span>CONTACT US</span>
+                    <span>SITEMAP</span>
+                </div>
+            </div>
+            <div class="title">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <nav class="nav">
+                    <ul id="list" class="clearfix">
+                        <li>COMPANY
+                            <ul class="list">
+                                <li>111</li>
+                                <li>222</li>
+                                <li>333</li>
+                            </ul>
+                        </li>
+                        <li>PRODUCT
+                            <ul class="list">
+                                <li>111</li>
+                                <li>222</li>
+                                <li>333</li>
+                            </ul>
+                        </li>
+                        <li>SERVICE
+                            <ul class="list">
+                                <li>111</li>
+                                <li>222</li>
+                                <li>333</li>
+                            </ul>
+                        </li>
+                        <li>PR
+                            <ul class="list">
+                                <li>111</li>
+                                <li>222</li>
+                                <li>333</li>
+                            </ul>
+                        </li>
+                        <li>RECRUIT
+                            <ul class="list">
+                                <li>111</li>
+                                <li>222</li>
+                                <li>333</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="bottom">
+
+                    </div>
+                    <div class="ce"></div>
+                    <div class="trange"></div>
+                    <div class="tran"></div>
+                    <div class="tran_up"></div>
+                    <div class="line"></div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner">
+            <img src="./img/ba.png" alt="">
+        </div>
+
+        <div class="banner_bottom">
+            <div class="line"></div>
+            <div class="pass">
+                <div class="item">
+                    <div class="left fl">
+                        <img src="img/i01.png" alt="">
+                    </div>
+                    <div class="right fl">
+                        <div class="title">
+                            <span>홍보</span>동영상 <img src="img/go.png" alt="">
+                        </div>
+                        <p>디자이언트의 새로운 이곳
+                            cyber 홍보실에서 보실 수
+                            있습니다.</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="left fl">
+                        <img src="img/i02.png" alt="">
+                    </div>
+                    <div class="right fl">
+                        <div class="title">
+                            <span>홍보</span>동영상 <img src="img/go.png" alt="">
+                        </div>
+                        <p>디자이언트의 새로운 이곳
+                            cyber 홍보실에서 보실 수
+                            있습니다.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left fl">
+                        <img src="img/i03.png" alt="">
+                    </div>
+                    <div class="right fl">
+                        <div class="title">
+                            <span>홍보</span>동영상 <img src="img/go.png" alt="">
+                        </div>
+                        <p>디자이언트의 새로운 이곳
+                            cyber 홍보실에서 보실 수
+                            있습니다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right_">
+
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="item">
+                <div class="title">
+                    <ul id="tab_id">
+                        <li class="current">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="neirong">
+                    <div class="left fl" id="left">
+                        <img src="img/left.png" alt="">
+                    </div>
+                    <div class="box" id="box">
+                        <div class="inner" id="inner">
+                            <ul id="imglist">
+                                <li>
+                                    <div class="left">
+                                        <img src="img/i11.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        1111111111
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/i11.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        222222222
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/i11.png" alt="">
+                                    </div>
+                                    <div class="txt">
+                                        3333333333
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="arrow">
+                        <span class="arrow-left">&lt;</span>
+                        <span class="arrow-right">&gt;</span>
+                    </div> -->
+                    <div class="right fl" id="right">
+                        <img src="img/right.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">XXXXX <span>more</span></div>
+                <ul>
+                    <li>제22회 한국정보올림... 2011-05-19</li>
+                    <li>디자이언트가 새로게 선보...2011-04-04</li>
+                    <li>2005년도 서비스향상을...2011-04-27</li>
+                    <li>홈페이지 새단장 이벤트2011-03-30</li>
+                </ul>
+            </div>
+            <div class="center">
+                <div class="left fl">
+                    <img src="img/right.png" alt="">
+                </div>
+                <p class="fl">고객
+                    센터
+                    안내</p>
+            </div>
+            <div class="item">
+                <div class="top"><strong>DGiant</strong> New System</div>
+                <div class="img fl">
+                    <img src="img/i13.png" alt="">
+                </div>
+                <div class="con fl">
+                    one click 시스템
+                    이곳에는 타이틀에 대한 간단한 설명이 들어가는공간입
+                    니다.현재 글줄길이 정도를 맡추어 내용을 넣어주세요
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="left">
+                <div class="txt">
+                    <span>회사소개</span>
+                    <span>개인정보취급방침</span>
+                    <span>이용약관</span>
+                    <span>고객센터</span>
+                </div>
+                <img src="./img/11.png" alt=""><span>188-1600</span>
+                <p>(주) DGiant 서울시 영등포구 신길4동 삼성아파트 대표이사 홍길동 대표전화 032-880-5432 / 032-880-5431</p>
+                <p> Copyright(C) 2006 By DGiant design. All Rights Reserved. Webmaster : company@com.kr</p>
+            </div>
+            <div class="line"></div>
+            <div class="right">
+                <img src="./img/logo2.png" alt="">
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery.mini.js"></script>
+<script>
+    var index = 0;
+
+    var w = $('#imglist li').width();
+
+    $('#tab_id li').click(function () {
+        $(this).addClass('current')
+        $(this).siblings().removeClass('current')
+        $('#imglist').css("left", `-${159*$(this).index()}px`)
+        index = $(this).index()
+    })
+    // 右侧点击。往左动
+    $('#right').click(function () {
+        index++;
+        if (index == 3) {
+            index = 0;
+        }
+
+        $('#tab_id li').siblings().removeClass('current')
+        $('#tab_id li').eq(index).addClass('current')
+
+        var juli = index * w;
+        $('#imglist').css("left", `-${juli}px`)
+    })
+    // 左侧点击
+    $('#left').click(function () {
+        index--;
+        if (index == -1) {
+            index = 2;
+        }
+
+        $('#tab_id li').siblings().removeClass('current')
+        $('#tab_id li').eq(index).addClass('current')
+
+        var juli = index * w;
+        $('#imglist').css("left", `-${juli}px`)
+    })
+
+    $('#list li').mouseenter(function () {
+        $(this).children('ul').stop().fadeIn()
+        $('#list .list li').mouseenter(function () {
+            $(this).css('color', 'red')
+        })
+    })
+    $('#list li').mouseleave(function () {
+        $(this).children('ul').stop().fadeOut()
+    })
+    $('#list .list li').mouseleave(function () {
+        $(this).css('color', '#fff')
+    })
+</script>
+
+</html>

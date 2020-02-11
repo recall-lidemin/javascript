@@ -1,0 +1,345 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.main_body {
+  width: 1260px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 82px;
+  background-color: #000;
+}
+.header .shortcut {
+  width: 710px;
+  height: 20px;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+}
+.header .shortcut .txt {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header .shortcut .txt span {
+  float: left;
+  color: #fff;
+  font-size: 8px;
+  margin-right: 5px;
+}
+.header .title {
+  width: 100%;
+  height: 62px;
+}
+.header .title .logo {
+  float: left;
+  width: 114px;
+  height: 30px;
+  margin-left: 83px;
+  margin-top: 6px;
+}
+.header .title .nav {
+  float: left;
+  width: 710px;
+  height: 62px;
+  margin-left: 85px;
+  position: relative;
+}
+.header .title .nav ul li {
+  float: left;
+  width: 140px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  margin-left: -1px;
+  background-color: #232323;
+}
+.header .title .nav ul li .list {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.header .title .nav .bottom {
+  width: 710px;
+  height: 22px;
+  background-color: #202020;
+}
+.header .title .nav .trange {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 0px;
+  height: 0px;
+  border: 40px solid transparent;
+  border-bottom: 50px solid #000;
+}
+.header .title .nav .tran {
+  position: absolute;
+  top: 0;
+  right: -36px;
+  width: 0px;
+  height: 0px;
+  border: 40px solid transparent;
+  border-bottom: 50px solid #202020;
+}
+.header .title .nav .tran_up {
+  position: absolute;
+  top: 0;
+  right: -38px;
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top: 20px solid #000;
+}
+.header .title .nav .line {
+  position: absolute;
+  top: 20px;
+  right: -288px;
+  width: 273px;
+  height: 1px;
+  background-color: #fff;
+}
+.header .title .nav .ce {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 20px;
+  height: 61px;
+  background-color: #202020;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 440px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.banner_bottom {
+  background-color: #000;
+  width: 100%;
+  height: 85px;
+  position: relative;
+  border: 0 solid;
+}
+.banner_bottom .line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  margin-top: 12px;
+  background-color: #f1f1f1;
+}
+.banner_bottom .pass {
+  position: absolute;
+  top: -16px;
+  left: 32px;
+  width: 785px;
+  height: 101px;
+  z-index: 1;
+  background: url(../img/bg2.png) no-repeat;
+}
+.banner_bottom .pass .item {
+  float: left;
+  width: 254px;
+  height: 101px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.banner_bottom .pass .item .right {
+  width: 120px;
+  margin-left: 10px;
+}
+.banner_bottom .pass .item .right .title {
+  color: #fff;
+}
+.banner_bottom .pass .item .right .title span {
+  color: orange;
+}
+.banner_bottom .pass .item .right p {
+  color: #fff;
+}
+.banner_bottom .right_ {
+  position: absolute;
+  top: -16px;
+  right: 270px;
+  width: 146px;
+  height: 101px;
+  background: url(../img/i05.png) no-repeat;
+}
+.content {
+  width: 100%;
+  height: 194px;
+  padding-top: 42px;
+}
+.content .item {
+  float: left;
+  margin-left: 66px;
+}
+.content .item .title {
+  height: 20px;
+}
+.content .item .title ul li {
+  cursor: pointer;
+  float: left;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+}
+.content .item .title ul .current {
+  background-color: #4f4f4f;
+  color: #fff;
+}
+.content .item .neirong {
+  margin-top: 10px;
+  position: relative;
+}
+.content .item .neirong .left {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 10px;
+  height: 59px;
+  line-height: 59px;
+  margin-right: 5px;
+}
+.content .item .neirong .right {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 59px;
+  line-height: 59px;
+  margin-left: 5px;
+}
+.content .item .neirong .box {
+  position: relative;
+}
+.content .item .neirong .box li {
+  float: left;
+  width: 155px;
+  height: 59px;
+  background: url(../img/22.png);
+}
+.content .item .neirong .box .left {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.content .item .neirong .box .txt {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.content .item .neirong ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+}
+.content .item .neirong ul .current {
+  display: block;
+}
+.content .item .neirong ul li {
+  position: relative;
+  float: left;
+}
+.content .item .neirong ul li .img {
+  position: absolute;
+  top: 8px;
+  left: 2px;
+}
+.content .item .neirong ul li span {
+  position: absolute;
+  top: 10px;
+  left: 46px;
+}
+.content .item:nth-child(2) {
+  width: 222px;
+  margin-left: 40px;
+}
+.content .center {
+  float: left;
+  width: 60px;
+  height: 92px;
+  margin-left: 26px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-shadow: 0px 0px 1px;
+}
+.content .center .left {
+  margin-left: 5px;
+  margin-top: 40px;
+}
+.content .center p {
+  width: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.content .item:nth-child(4) {
+  width: 312px;
+  height: 97px;
+  margin-left: 50px;
+}
+.content .item:nth-child(4) .top {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+.content .item:nth-child(4) .con {
+  width: 200px;
+  border-bottom: 1px solid #ccc;
+}
+.footer {
+  width: 100%;
+  height: 180px;
+  background-color: #262223;
+  padding-top: 22px;
+}
+.footer .left {
+  float: left;
+  margin-left: 250px;
+  text-align: right;
+  position: relative;
+}
+.footer .left .txt {
+  position: absolute;
+  top: 2px;
+  right: 70px;
+}
+.footer .left .txt span {
+  font-size: 12px;
+}
+.footer .left .txt span:nth-child(3) {
+  margin-left: 20px;
+}
+.footer .left span {
+  color: #fff;
+  margin-left: 10px;
+}
+.footer .left img {
+  width: 305px;
+  height: 22px;
+}
+.footer .left p {
+  color: #fff;
+}
+.footer .line {
+  float: left;
+  width: 1px;
+  height: 50px;
+  margin: 0 20px;
+  background-color: #fff;
+}
+.footer .right {
+  float: left;
+}
+.footer .right img {
+  margin-top: 12px;
+}
