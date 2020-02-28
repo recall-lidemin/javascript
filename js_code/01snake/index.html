@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .game {
+            position: relative;
+            width: 1000px;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        .map {
+            float: left;
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+        }
+
+        .nav {
+            float: right;
+            width: 200px;
+            height: 600px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .nav input[type=button] {
+            width: 100px;
+            height: 40px;
+            background-color: #e1e1e1;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .nav p {
+            margin: 10px 0;
+        }
+
+        .dv {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 400px;
+            height: 200px;
+            background-color: #fff;
+            text-align: center;
+            z-index: 1;
+            display: none;
+        }
+
+        .dv button:nth-child(2) {
+            position: absolute;
+            left: 80px;
+            bottom: 20px;
+            width: 80px;
+            height: 40px;
+        }
+        .dv button:last-child {
+            position: absolute;
+            left: 240px;
+            bottom: 20px;
+            width: 80px;
+            height: 40px;
+        }
+
+        .mask {
+            display: none;
+            position: absolute;
+            width: 1000px;
+            height: 600px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .info {
+            position: absolute;
+            width: 100%;
+            top: 20px;
+        }
+
+        .info p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="game">
+    <div class="dv">
+        <div class="info">
+            <p>游戏失败了</p>
+            <p>总得分：0</p>
+        </div>
+        <button class="game_again">再玩一次</button>
+        <button class="exit">退出</button>
+    </div>
+    <div class="map">
+
+    </div>
+    <div class="nav">
+        <p>得分： 0</p>
+        <input type="button" value="开始" class="start">
+        <input type="button" value="暂停" class="pause_again">
+    </div>
+    <div class="mask"></div>
+</div>
+</body>
+<script src="index.js"></script>
+<script>
+    var game = new Game(document.querySelector(".map"));
+    var pause_again = document.querySelector(".pause_again");
+    var start = document.querySelector(".start");
+    var game_again = document.querySelector(".game_again");
+    var exit = document.querySelector(".exit");
+    var dv = document.querySelector(".dv");
+    var mask = document.querySelector(".mask");
+
+    start.addEventListener("click", function () {
+        game.init();
+    });
+
+    pause_again.addEventListener("click", function () {
+        if (this.value == "暂停") {
+            game.pause();
+            this.value = "继续";
+        } else {
+            game.again();
+            this.value = "暂停";
+        }
+    });
+
+    game_again.addEventListener("click", function () {
+        dv.style.display = "none";
+        mask.style.display = "none";
+        game.init();
+    });
+    exit.addEventListener("click", function () {
+        dv.style.display = "none";
+        mask.style.display = "none";
+        location.reload();
+    });
+
+
+
+</script>
+</html>
