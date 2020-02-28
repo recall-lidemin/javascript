@@ -1,10 +1,22 @@
 ## JavaScript
 
-### 01snake---面向对象编程
+### Project setup
 
-### 02jq_demo---jquery事件注册，实现简单轮播
+```
+yarn
+```
 
-### 03Array---数组方法算法
+### Run
+
+```
+node app.js
+```
+
+### 访问
+
+```
+127.0.0.1:3000
+```
 
 
 
